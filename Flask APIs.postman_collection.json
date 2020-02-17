@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "9dc72c6b-76f2-4854-9c0c-88368a934b8e",
+		"name": "Flask APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accounts\":{\n\t\t\"e1\":\"meet\",\n\t\t\"e2\":\"parekh\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/employees/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employees",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accounts\":{\n\t\t\"e1\":\"meet\",\n\t\t\"e2\":\"PAREKH\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/employees/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employees",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/employees/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employees",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
